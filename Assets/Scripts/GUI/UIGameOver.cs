@@ -83,6 +83,8 @@ public class UIGameOver : MonoBehaviour
         }
 
         Time.timeScale = 1f;
-        levelLoader.Reload();
+        //levelLoader.Reload();
+        Spawner.Instance.StartCurrentLevel();
+        gameObject.SetActive(false);
     }
 }

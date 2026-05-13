@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 376cd4a50b0c07644a11709e20bab6f0, type: 3}
+  m_Name: Level2Data
+  m_EditorClassIdentifier: 
+  levelNumber: 2
+  sceneName: Level2
+  enemyCount: 15
+  prefabToSpawn:
+  - {fileID: 5909410355833123678, guid: d7331ecc25b941247b6b08aaa376a8f9, type: 3}
+  - {fileID: 2341869232920678381, guid: 5ad53149292b5dd40889d88449480e7f, type: 3}
+  - {fileID: 1936433703106133325, guid: a80547fa289c0c54a81fff68fe1f858e, type: 3}
+  nextLevel: {fileID: 11400000, guid: 1efb96d247123e6459b244c1df97bda5, type: 2}

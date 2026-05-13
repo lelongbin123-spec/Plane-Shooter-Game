@@ -15,10 +15,11 @@ public class Shooting : MonoBehaviour
     private float defaultBulletSpawnTime;
     private Coroutine fireRateBoostCoroutine;
     // Start is called before the first frame update
-    void Start()
+    void OnEnable()
     {
         defaultBulletSpawnTime = bulletSpawnTime;
         flash.SetActive(false);
+        StopAllCoroutines();
         StartCoroutine(Shoot());
     }
 

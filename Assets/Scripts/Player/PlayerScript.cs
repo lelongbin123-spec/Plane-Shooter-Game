@@ -10,6 +10,9 @@ public class PlayerScript : MonoBehaviour
     public UIGameOver uiGameOver;
     public float speed = 10f;
     public float papding = 0.8f;
+
+    private Vector3 startPosition;
+
     float xMin, xMax, yMin, yMax;
 
     public float health = 20f;
@@ -31,6 +34,7 @@ public class PlayerScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        startPosition = transform.position;
         damageAmount = barFillAmount / health;
         uiGameOver.Close();
     }
@@ -69,7 +73,8 @@ public class PlayerScript : MonoBehaviour
 
             if (health <= 0)
             {
-                Destroy(gameObject);
+                //Destroy(gameObject);
+                gameObject.SetActive(false);
                 GameObject playerExplosion = Instantiate(explosion, transform.position, Quaternion.identity);
                 Destroy(playerExplosion, 2f);
 
@@ -109,5 +114,20 @@ public class PlayerScript : MonoBehaviour
             Time.timeScale = 0f;
             uiGameOver.Show(score);
         }
+    }
+    public void Resurrection(bool resetScore = true)
+    {
+        health = 20f;
+        barFillAmount = 1f;
+        if (resetScore)
+        {
+            score = 0;
+        }
+        transform.position = startPosition;
+        gameObject.SetActive(true);
+
+        uiGameplay.UpdateHealthbar(barFillAmount);
+        uiGameplay.UpdateCoin(score);
+        uiGameOver.Close();
     }
 }

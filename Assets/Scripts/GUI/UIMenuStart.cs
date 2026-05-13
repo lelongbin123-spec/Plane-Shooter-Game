@@ -11,9 +11,15 @@ public class UIMenuStart : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        startButton.onClick.AddListener(levelLoader.NextLevel);
+        startButton.onClick.AddListener(Playgame);
         exitButton.onClick.AddListener(ExitGame);
     }
+
+    private void Playgame()
+    {
+        SceneManager.LoadScene("Level1");
+    }
+
     public void ExitGame()
     {
         if (AudioManager.HasInstance)

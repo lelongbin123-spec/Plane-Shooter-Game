@@ -42,6 +42,10 @@ public class EnemyScript : MonoBehaviour
             if (health <= 0)
             {
                 Instantiate(coinPrefab, transform.position, Quaternion.identity);
+                if (Spawner.Instance != null)
+                {
+                    Spawner.Instance.DestroyEnemy();
+                }
                 Destroy(gameObject);
                 GameObject enemyExplosion = Instantiate(enemyExplosionPrefabs, transform.position, Quaternion.identity);
                 Destroy(enemyExplosion, 0.4f);

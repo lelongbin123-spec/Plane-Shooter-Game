@@ -5,19 +5,36 @@ using UnityEngine;
 
 public class LevelLoader : MonoBehaviour
 {
-    int currentLevel;
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] private LevelData currentLevel;
+
+    public LevelData CurrentLevel => currentLevel;
+
+    public void SetLevel(LevelData levelData)
     {
-        currentLevel = SceneManager.GetActiveScene().buildIndex;
+        currentLevel = levelData;
     }
 
-    public void NextLevel()
+    public bool HasNextLevel()
     {
-        SceneManager.LoadScene(currentLevel+1);
+        return currentLevel != null && currentLevel.nextLevel != null;
     }
-    public void Reload()
+
+    public LevelData GetNextLevel()
     {
-        SceneManager.LoadScene(currentLevel);
+        if (currentLevel == null)
+            return null;
+
+        return currentLevel.nextLevel;
+    }
+
+    public void LoadNextLevelData()
+    {
+        if (currentLevel == null || currentLevel.nextLevel == null)
+        {
+            Debug.Log("No next level data.");
+            return;
+        }
+
+        currentLevel = currentLevel.nextLevel;
     }
 }

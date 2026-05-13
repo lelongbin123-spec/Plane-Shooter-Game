@@ -1,12 +1,201 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\Unity\\Plane Shooter\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{802E4413-0062-20F9-D2FC-92B656F0C254}|Assembly-CSharp.csproj|d:\\unity\\plane shooter\\assets\\scripts\\levelloader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{802E4413-0062-20F9-D2FC-92B656F0C254}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\levelloader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{802E4413-0062-20F9-D2FC-92B656F0C254}|Assembly-CSharp.csproj|d:\\unity\\plane shooter\\assets\\scripts\\leveldata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{802E4413-0062-20F9-D2FC-92B656F0C254}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\leveldata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{802E4413-0062-20F9-D2FC-92B656F0C254}|Assembly-CSharp.csproj|d:\\unity\\plane shooter\\assets\\scripts\\enemy\\spawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{802E4413-0062-20F9-D2FC-92B656F0C254}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy\\spawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{802E4413-0062-20F9-D2FC-92B656F0C254}|Assembly-CSharp.csproj|D:\\Unity\\Plane Shooter\\assets\\scripts\\player\\playerscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{802E4413-0062-20F9-D2FC-92B656F0C254}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playerscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{802E4413-0062-20F9-D2FC-92B656F0C254}|Assembly-CSharp.csproj|D:\\Unity\\Plane Shooter\\assets\\scripts\\gui\\uilevel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{802E4413-0062-20F9-D2FC-92B656F0C254}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gui\\uilevel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{802E4413-0062-20F9-D2FC-92B656F0C254}|Assembly-CSharp.csproj|D:\\Unity\\Plane Shooter\\assets\\scripts\\gui\\uigameover.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{802E4413-0062-20F9-D2FC-92B656F0C254}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gui\\uigameover.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{802E4413-0062-20F9-D2FC-92B656F0C254}|Assembly-CSharp.csproj|D:\\Unity\\Plane Shooter\\assets\\scripts\\gui\\uipausegamescript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{802E4413-0062-20F9-D2FC-92B656F0C254}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gui\\uipausegamescript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{802E4413-0062-20F9-D2FC-92B656F0C254}|Assembly-CSharp.csproj|D:\\Unity\\Plane Shooter\\assets\\scripts\\gui\\uimenustart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{802E4413-0062-20F9-D2FC-92B656F0C254}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gui\\uimenustart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{802E4413-0062-20F9-D2FC-92B656F0C254}|Assembly-CSharp.csproj|D:\\Unity\\Plane Shooter\\assets\\scripts\\gui\\uigameplay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{802E4413-0062-20F9-D2FC-92B656F0C254}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gui\\uigameplay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{802E4413-0062-20F9-D2FC-92B656F0C254}|Assembly-CSharp.csproj|D:\\Unity\\Plane Shooter\\assets\\scripts\\popupscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{802E4413-0062-20F9-D2FC-92B656F0C254}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\popupscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{802E4413-0062-20F9-D2FC-92B656F0C254}|Assembly-CSharp.csproj|D:\\Unity\\Plane Shooter\\assets\\scripts\\audiomanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{802E4413-0062-20F9-D2FC-92B656F0C254}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\audiomanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LevelLoader.cs",
+              "DocumentMoniker": "D:\\Unity\\Plane Shooter\\Assets\\Scripts\\LevelLoader.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\LevelLoader.cs",
+              "ToolTip": "D:\\Unity\\Plane Shooter\\Assets\\Scripts\\LevelLoader.cs",
+              "RelativeToolTip": "Assets\\Scripts\\LevelLoader.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAUwA0AAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T06:32:35.506Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Spawner.cs",
+              "DocumentMoniker": "D:\\Unity\\Plane Shooter\\Assets\\Scripts\\Enemy\\Spawner.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy\\Spawner.cs",
+              "ToolTip": "D:\\Unity\\Plane Shooter\\Assets\\Scripts\\Enemy\\Spawner.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Enemy\\Spawner.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAQwCUAAABNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T06:26:31.705Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LevelData.cs",
+              "DocumentMoniker": "D:\\Unity\\Plane Shooter\\Assets\\Scripts\\LevelData.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\LevelData.cs",
+              "ToolTip": "D:\\Unity\\Plane Shooter\\Assets\\Scripts\\LevelData.cs",
+              "RelativeToolTip": "Assets\\Scripts\\LevelData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-16T13:43:22.776Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PlayerScript.cs",
+              "DocumentMoniker": "D:\\Unity\\Plane Shooter\\Assets\\Scripts\\Player\\PlayerScript.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerScript.cs",
+              "ToolTip": "D:\\Unity\\Plane Shooter\\Assets\\Scripts\\Player\\PlayerScript.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerScript.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFwAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-16T13:38:45.047Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UILevel.cs",
+              "DocumentMoniker": "D:\\Unity\\Plane Shooter\\Assets\\Scripts\\GUI\\UILevel.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\GUI\\UILevel.cs",
+              "ToolTip": "D:\\Unity\\Plane Shooter\\Assets\\Scripts\\GUI\\UILevel.cs",
+              "RelativeToolTip": "Assets\\Scripts\\GUI\\UILevel.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-15T06:24:15.016Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UIPauseGameScript.cs",
+              "DocumentMoniker": "D:\\Unity\\Plane Shooter\\Assets\\Scripts\\GUI\\UIPauseGameScript.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\GUI\\UIPauseGameScript.cs",
+              "ToolTip": "D:\\Unity\\Plane Shooter\\Assets\\Scripts\\GUI\\UIPauseGameScript.cs",
+              "RelativeToolTip": "Assets\\Scripts\\GUI\\UIPauseGameScript.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAN/SURBVEhL7VTPbxNHFH4zu46D45jwww4STlzVqUFZQSNKI3FpiSqRVIpIqbKbS2/ceolkDnDMP4BRLlwQSlWpUtkEUSQkMOJguFRUatUDtqrIBppswGRJok1MyjreebwZGwQcuHGhfNLO7n7zzZuZ770Z\u002BIgPH0w284/m49VaNT5TnoG7j\u002B/Caq0KvdFeMD8zYWzfcR\u002B8sJPJZHw1gnDxr4txLdBi3nbPmcxM\u002BtPz0\u002BHtXjgZaKH1k4dOui2ZApeN0IQpdGGDELYGYAPndsCZLTRuCxHK1dvrPUrdAgM0hRbkIhsRxbeC5ySvBK9Bl83V8pXEltgyOkId0BNNFuqiXuzrSltr/lr8xsJ1JgDDSt1C/t98AgD7WKPJX1u6FdaQpemT\u002BDehLPpi5vOpaCh65nD3l05XW9c50LQbQgS5B979I0u1RZcjWNb\u002BH5aljb8UZ\u002BCx/\u002BRHmmAEkWU5x7IAlqbV5wBZvjPccb5/5wBEIerOTcy5yiKn5kDZKzv3Vu9lOQvZsfWYIwI8VfHKsyvPn0K1vqpsYRxsoTObhli0tiTjeJaC263g0i5LILMpqM11UHYpi8gS8IO6/8fS75X8xK2XSSobF/bNcs5KGjSWGcMSIsyh7GHwNSAY9HGTLHAp\u002BG5iLeKLiOI2UidNXmpKCTumO6dosMmEsNayz4qSexfe1u\u002BcjvY3dwJza5MbUy2ZgrLofeKdOyCLjpJFBllkTx46bTyqLR/9\u002BZ\u002BfYHmz2rSIwSzJyCJ4ZVFEj9w\u002BuHsAYm3RwqUTlwsqB\u002B16O2hMDxu7jPRXd4ZktawnYonk9QfXxp9t1YaQs4IIuMEZJVoOQIhTGwPEYXLbpyRTuTL6B4MBTzBKlBA0MUBBWZTp2g8Hdh1I0sxnG9AwZXBZpqnOT6xtWkSWnDTTZigs\u002BTRXjg5qLCt3LcsVGC5KXvYHAizcpqqtWUXf9X0PfuN5mOq\u002B72/3T9PZcPoPdw8eScVS8YH4gIuCQesKUBU2ccWkN/p00Cq/mpeL47\u002BNIx00eZW4l07MFhchL2UKagfDvcPuYPdgaeW/ldJD72HCq3tDCxsL7p6OPaWx9FhlNDP66h6SONYz4h5LfVv55tMRxY/uHfWHUyMVySvBa1AT6KjblGSLVmoJxq0AmcWZsAQlrsFEti3etqjULyEPHIrsZuem4uWlF6A4JXnV/xH/JwC8AP7Zo1VCd3UMAAAAAElFTkSuQmCC",
+              "WhenOpened": "2026-04-13T07:41:30.236Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "UIGameplay.cs",
+              "DocumentMoniker": "D:\\Unity\\Plane Shooter\\Assets\\Scripts\\GUI\\UIGameplay.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\GUI\\UIGameplay.cs",
+              "ToolTip": "D:\\Unity\\Plane Shooter\\Assets\\Scripts\\GUI\\UIGameplay.cs",
+              "RelativeToolTip": "Assets\\Scripts\\GUI\\UIGameplay.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAN/SURBVEhL7VTPbxNHFH4zu46D45jwww4STlzVqUFZQSNKI3FpiSqRVIpIqbKbS2/ceolkDnDMP4BRLlwQSlWpUtkEUSQkMOJguFRUatUDtqrIBppswGRJok1MyjreebwZGwQcuHGhfNLO7n7zzZuZ770Z\u002BIgPH0w284/m49VaNT5TnoG7j\u002B/Caq0KvdFeMD8zYWzfcR\u002B8sJPJZHw1gnDxr4txLdBi3nbPmcxM\u002BtPz0\u002BHtXjgZaKH1k4dOui2ZApeN0IQpdGGDELYGYAPndsCZLTRuCxHK1dvrPUrdAgM0hRbkIhsRxbeC5ySvBK9Bl83V8pXEltgyOkId0BNNFuqiXuzrSltr/lr8xsJ1JgDDSt1C/t98AgD7WKPJX1u6FdaQpemT\u002BDehLPpi5vOpaCh65nD3l05XW9c50LQbQgS5B979I0u1RZcjWNb\u002BH5aljb8UZ\u002BCx/\u002BRHmmAEkWU5x7IAlqbV5wBZvjPccb5/5wBEIerOTcy5yiKn5kDZKzv3Vu9lOQvZsfWYIwI8VfHKsyvPn0K1vqpsYRxsoTObhli0tiTjeJaC263g0i5LILMpqM11UHYpi8gS8IO6/8fS75X8xK2XSSobF/bNcs5KGjSWGcMSIsyh7GHwNSAY9HGTLHAp\u002BG5iLeKLiOI2UidNXmpKCTumO6dosMmEsNayz4qSexfe1u\u002BcjvY3dwJza5MbUy2ZgrLofeKdOyCLjpJFBllkTx46bTyqLR/9\u002BZ\u002BfYHmz2rSIwSzJyCJ4ZVFEj9w\u002BuHsAYm3RwqUTlwsqB\u002B16O2hMDxu7jPRXd4ZktawnYonk9QfXxp9t1YaQs4IIuMEZJVoOQIhTGwPEYXLbpyRTuTL6B4MBTzBKlBA0MUBBWZTp2g8Hdh1I0sxnG9AwZXBZpqnOT6xtWkSWnDTTZigs\u002BTRXjg5qLCt3LcsVGC5KXvYHAizcpqqtWUXf9X0PfuN5mOq\u002B72/3T9PZcPoPdw8eScVS8YH4gIuCQesKUBU2ccWkN/p00Cq/mpeL47\u002BNIx00eZW4l07MFhchL2UKagfDvcPuYPdgaeW/ldJD72HCq3tDCxsL7p6OPaWx9FhlNDP66h6SONYz4h5LfVv55tMRxY/uHfWHUyMVySvBa1AT6KjblGSLVmoJxq0AmcWZsAQlrsFEti3etqjULyEPHIrsZuem4uWlF6A4JXnV/xH/JwC8AP7Zo1VCd3UMAAAAAElFTkSuQmCC",
+              "WhenOpened": "2026-04-15T06:24:15.016Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UIGameOver.cs",
+              "DocumentMoniker": "D:\\Unity\\Plane Shooter\\Assets\\Scripts\\GUI\\UIGameOver.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\GUI\\UIGameOver.cs",
+              "ToolTip": "D:\\Unity\\Plane Shooter\\Assets\\Scripts\\GUI\\UIGameOver.cs",
+              "RelativeToolTip": "Assets\\Scripts\\GUI\\UIGameOver.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAowC8AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-15T05:09:49.185Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AudioManager.cs",
+              "DocumentMoniker": "D:\\Unity\\Plane Shooter\\Assets\\Scripts\\AudioManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\AudioManager.cs",
+              "ToolTip": "D:\\Unity\\Plane Shooter\\Assets\\Scripts\\AudioManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\AudioManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAN/SURBVEhL7VTPbxNHFH4zu46D45jwww4STlzVqUFZQSNKI3FpiSqRVIpIqbKbS2/ceolkDnDMP4BRLlwQSlWpUtkEUSQkMOJguFRUatUDtqrIBppswGRJok1MyjreebwZGwQcuHGhfNLO7n7zzZuZ770Z\u002BIgPH0w284/m49VaNT5TnoG7j\u002B/Caq0KvdFeMD8zYWzfcR\u002B8sJPJZHw1gnDxr4txLdBi3nbPmcxM\u002BtPz0\u002BHtXjgZaKH1k4dOui2ZApeN0IQpdGGDELYGYAPndsCZLTRuCxHK1dvrPUrdAgM0hRbkIhsRxbeC5ySvBK9Bl83V8pXEltgyOkId0BNNFuqiXuzrSltr/lr8xsJ1JgDDSt1C/t98AgD7WKPJX1u6FdaQpemT\u002BDehLPpi5vOpaCh65nD3l05XW9c50LQbQgS5B979I0u1RZcjWNb\u002BH5aljb8UZ\u002BCx/\u002BRHmmAEkWU5x7IAlqbV5wBZvjPccb5/5wBEIerOTcy5yiKn5kDZKzv3Vu9lOQvZsfWYIwI8VfHKsyvPn0K1vqpsYRxsoTObhli0tiTjeJaC263g0i5LILMpqM11UHYpi8gS8IO6/8fS75X8xK2XSSobF/bNcs5KGjSWGcMSIsyh7GHwNSAY9HGTLHAp\u002BG5iLeKLiOI2UidNXmpKCTumO6dosMmEsNayz4qSexfe1u\u002BcjvY3dwJza5MbUy2ZgrLofeKdOyCLjpJFBllkTx46bTyqLR/9\u002BZ\u002BfYHmz2rSIwSzJyCJ4ZVFEj9w\u002BuHsAYm3RwqUTlwsqB\u002B16O2hMDxu7jPRXd4ZktawnYonk9QfXxp9t1YaQs4IIuMEZJVoOQIhTGwPEYXLbpyRTuTL6B4MBTzBKlBA0MUBBWZTp2g8Hdh1I0sxnG9AwZXBZpqnOT6xtWkSWnDTTZigs\u002BTRXjg5qLCt3LcsVGC5KXvYHAizcpqqtWUXf9X0PfuN5mOq\u002B72/3T9PZcPoPdw8eScVS8YH4gIuCQesKUBU2ccWkN/p00Cq/mpeL47\u002BNIx00eZW4l07MFhchL2UKagfDvcPuYPdgaeW/ldJD72HCq3tDCxsL7p6OPaWx9FhlNDP66h6SONYz4h5LfVv55tMRxY/uHfWHUyMVySvBa1AT6KjblGSLVmoJxq0AmcWZsAQlrsFEti3etqjULyEPHIrsZuem4uWlF6A4JXnV/xH/JwC8AP7Zo1VCd3UMAAAAAElFTkSuQmCC",
+              "WhenOpened": "2026-04-13T07:41:30.235Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "PopupScript.cs",
+              "DocumentMoniker": "D:\\Unity\\Plane Shooter\\Assets\\Scripts\\PopupScript.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PopupScript.cs",
+              "ToolTip": "D:\\Unity\\Plane Shooter\\Assets\\Scripts\\PopupScript.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PopupScript.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAhAAAAAAAAAA==",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAN/SURBVEhL7VTPbxNHFH4zu46D45jwww4STlzVqUFZQSNKI3FpiSqRVIpIqbKbS2/ceolkDnDMP4BRLlwQSlWpUtkEUSQkMOJguFRUatUDtqrIBppswGRJok1MyjreebwZGwQcuHGhfNLO7n7zzZuZ770Z\u002BIgPH0w284/m49VaNT5TnoG7j\u002B/Caq0KvdFeMD8zYWzfcR\u002B8sJPJZHw1gnDxr4txLdBi3nbPmcxM\u002BtPz0\u002BHtXjgZaKH1k4dOui2ZApeN0IQpdGGDELYGYAPndsCZLTRuCxHK1dvrPUrdAgM0hRbkIhsRxbeC5ySvBK9Bl83V8pXEltgyOkId0BNNFuqiXuzrSltr/lr8xsJ1JgDDSt1C/t98AgD7WKPJX1u6FdaQpemT\u002BDehLPpi5vOpaCh65nD3l05XW9c50LQbQgS5B979I0u1RZcjWNb\u002BH5aljb8UZ\u002BCx/\u002BRHmmAEkWU5x7IAlqbV5wBZvjPccb5/5wBEIerOTcy5yiKn5kDZKzv3Vu9lOQvZsfWYIwI8VfHKsyvPn0K1vqpsYRxsoTObhli0tiTjeJaC263g0i5LILMpqM11UHYpi8gS8IO6/8fS75X8xK2XSSobF/bNcs5KGjSWGcMSIsyh7GHwNSAY9HGTLHAp\u002BG5iLeKLiOI2UidNXmpKCTumO6dosMmEsNayz4qSexfe1u\u002BcjvY3dwJza5MbUy2ZgrLofeKdOyCLjpJFBllkTx46bTyqLR/9\u002BZ\u002BfYHmz2rSIwSzJyCJ4ZVFEj9w\u002BuHsAYm3RwqUTlwsqB\u002B16O2hMDxu7jPRXd4ZktawnYonk9QfXxp9t1YaQs4IIuMEZJVoOQIhTGwPEYXLbpyRTuTL6B4MBTzBKlBA0MUBBWZTp2g8Hdh1I0sxnG9AwZXBZpqnOT6xtWkSWnDTTZigs\u002BTRXjg5qLCt3LcsVGC5KXvYHAizcpqqtWUXf9X0PfuN5mOq\u002B72/3T9PZcPoPdw8eScVS8YH4gIuCQesKUBU2ccWkN/p00Cq/mpeL47\u002BNIx00eZW4l07MFhchL2UKagfDvcPuYPdgaeW/ldJD72HCq3tDCxsL7p6OPaWx9FhlNDP66h6SONYz4h5LfVv55tMRxY/uHfWHUyMVySvBa1AT6KjblGSLVmoJxq0AmcWZsAQlrsFEti3etqjULyEPHIrsZuem4uWlF6A4JXnV/xH/JwC8AP7Zo1VCd3UMAAAAAElFTkSuQmCC",
+              "WhenOpened": "2026-04-13T07:42:45.212Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UIMenuStart.cs",
+              "DocumentMoniker": "D:\\Unity\\Plane Shooter\\Assets\\Scripts\\GUI\\UIMenuStart.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\GUI\\UIMenuStart.cs",
+              "ToolTip": "D:\\Unity\\Plane Shooter\\Assets\\Scripts\\GUI\\UIMenuStart.cs",
+              "RelativeToolTip": "Assets\\Scripts\\GUI\\UIMenuStart.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwA0AAAA9AAAAAAAAAA==",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAN/SURBVEhL7VTPbxNHFH4zu46D45jwww4STlzVqUFZQSNKI3FpiSqRVIpIqbKbS2/ceolkDnDMP4BRLlwQSlWpUtkEUSQkMOJguFRUatUDtqrIBppswGRJok1MyjreebwZGwQcuHGhfNLO7n7zzZuZ770Z\u002BIgPH0w284/m49VaNT5TnoG7j\u002B/Caq0KvdFeMD8zYWzfcR\u002B8sJPJZHw1gnDxr4txLdBi3nbPmcxM\u002BtPz0\u002BHtXjgZaKH1k4dOui2ZApeN0IQpdGGDELYGYAPndsCZLTRuCxHK1dvrPUrdAgM0hRbkIhsRxbeC5ySvBK9Bl83V8pXEltgyOkId0BNNFuqiXuzrSltr/lr8xsJ1JgDDSt1C/t98AgD7WKPJX1u6FdaQpemT\u002BDehLPpi5vOpaCh65nD3l05XW9c50LQbQgS5B979I0u1RZcjWNb\u002BH5aljb8UZ\u002BCx/\u002BRHmmAEkWU5x7IAlqbV5wBZvjPccb5/5wBEIerOTcy5yiKn5kDZKzv3Vu9lOQvZsfWYIwI8VfHKsyvPn0K1vqpsYRxsoTObhli0tiTjeJaC263g0i5LILMpqM11UHYpi8gS8IO6/8fS75X8xK2XSSobF/bNcs5KGjSWGcMSIsyh7GHwNSAY9HGTLHAp\u002BG5iLeKLiOI2UidNXmpKCTumO6dosMmEsNayz4qSexfe1u\u002BcjvY3dwJza5MbUy2ZgrLofeKdOyCLjpJFBllkTx46bTyqLR/9\u002BZ\u002BfYHmz2rSIwSzJyCJ4ZVFEj9w\u002BuHsAYm3RwqUTlwsqB\u002B16O2hMDxu7jPRXd4ZktawnYonk9QfXxp9t1YaQs4IIuMEZJVoOQIhTGwPEYXLbpyRTuTL6B4MBTzBKlBA0MUBBWZTp2g8Hdh1I0sxnG9AwZXBZpqnOT6xtWkSWnDTTZigs\u002BTRXjg5qLCt3LcsVGC5KXvYHAizcpqqtWUXf9X0PfuN5mOq\u002B72/3T9PZcPoPdw8eScVS8YH4gIuCQesKUBU2ccWkN/p00Cq/mpeL47\u002BNIx00eZW4l07MFhchL2UKagfDvcPuYPdgaeW/ldJD72HCq3tDCxsL7p6OPaWx9FhlNDP66h6SONYz4h5LfVv55tMRxY/uHfWHUyMVySvBa1AT6KjblGSLVmoJxq0AmcWZsAQlrsFEti3etqjULyEPHIrsZuem4uWlF6A4JXnV/xH/JwC8AP7Zo1VCd3UMAAAAAElFTkSuQmCC",
+              "WhenOpened": "2026-04-13T07:41:30.212Z"
+            }
+          ]
+        }
+      ]
     }
   ]
 }

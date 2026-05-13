@@ -18,6 +18,18 @@ public class Shreder : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        EnemyScript enemy = collision.GetComponentInParent<EnemyScript>();
+        if (enemy != null)
+        {
+            if (Spawner.Instance != null)
+            {
+                Spawner.Instance.DestroyEnemy();
+            }
+
+            Destroy(enemy.gameObject);
+            return;
+        }
+
         Destroy(collision.gameObject);
     }
 }

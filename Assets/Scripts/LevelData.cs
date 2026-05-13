@@ -2,17 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LevelData : MonoBehaviour
+[CreateAssetMenu(fileName = "LevelData", menuName = "ScriptableObjects/LevelData")]
+public class LevelData : ScriptableObject
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public int levelNumber;
+    public string sceneName;
+    public int enemyCount;
+    public float spawnDelay = 2f;
+    public GameObject[] prefabToSpawn;
+    public LevelData nextLevel;
 }
