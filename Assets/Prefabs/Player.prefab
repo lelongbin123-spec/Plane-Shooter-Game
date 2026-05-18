@@ -25,12 +25,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6316659920484215587}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.865, y: 0, z: 0}
+  m_LocalPosition: {x: 0.771, y: -0.12, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 6316659921651108974}
-  m_RootOrder: 0
+  m_Father: {fileID: 6316659921068098308}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &6316659920484215597
 SpriteRenderer:
@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: 6316659920774696545}
   m_Layer: 0
   m_Name: SpawnPointRight
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -108,7 +108,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6316659920774696544}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.46, y: 0.32, z: 0}
+  m_LocalPosition: {x: 0.722, y: -0.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -130,6 +130,7 @@ GameObject:
   - component: {fileID: 6316659921068098310}
   - component: {fileID: 6316659921068098304}
   - component: {fileID: 6316659921068098311}
+  - component: {fileID: 7069953078663040752}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -152,6 +153,7 @@ Transform:
   - {fileID: 6316659921242795103}
   - {fileID: 6316659920774696545}
   - {fileID: 6316659921651108974}
+  - {fileID: 6316659920484215596}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -196,7 +198,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1048596023, guid: 1dbf121f4081caa45afa162ca436ac9a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5cadc7d9ccf80e14ea92a456dacc5a96, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -242,7 +244,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damageEffect: {fileID: 3466000874619082405, guid: 9d35a7d0e9759e841b620829270ef0c7, type: 3}
   explosion: {fileID: 1730338621821775202, guid: 5f4e9644323075a4aa1bfb891583bbea, type: 3}
-  playerHealthBar: {fileID: 0}
+  uiGameplay: {fileID: 0}
+  uiGameOver: {fileID: 0}
   speed: 10
   papding: 0.8
   health: 10
@@ -260,9 +263,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 4229634252036061027, guid: 9084c7c1dd5f3ae40b36353ecfd6a3f7, type: 3}
   flash: {fileID: 6316659921651108973}
+  flashLeft: {fileID: 6316659921651108973}
+  flashRight: {fileID: 6316659920484215587}
   spawnPointLeft: {fileID: 6316659921242795103}
   spawnPointRight: {fileID: 6316659920774696545}
   bulletSpawnTime: 0.5
+  minBulletSpawnTime: 0.1
 --- !u!68 &6316659921068098304
 EdgeCollider2D:
   m_ObjectHideFlags: 0
@@ -311,6 +317,40 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &7069953078663040752
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6316659921068098425}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdf30057991b39e41a373df40d4d69fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetRenderer: {fileID: 6316659921068098427}
+  planeSprites:
+  - {fileID: 1048596023, guid: 1dbf121f4081caa45afa162ca436ac9a, type: 3}
+  - {fileID: -1411106948, guid: 37034e656836c4a4aa29c43908cee144, type: 3}
+  - {fileID: 21300000, guid: 5cadc7d9ccf80e14ea92a456dacc5a96, type: 3}
+  targetAnimator: {fileID: 6316659921068098426}
+  animatorControllers: []
+  forceSpriteAfterAnimator: 1
+  shooting: {fileID: 6316659921068098310}
+  weaponPositions:
+  - leftSpawnPosition: {x: -0.41, y: 0.32, z: 0}
+    rightSpawnPosition: {x: 0.46, y: 0.32, z: 0}
+    leftFlashPosition: {x: -0.41, y: 0.55, z: 0}
+    rightFlashPosition: {x: 0.46, y: 0.55, z: 0}
+  - leftSpawnPosition: {x: -0.426, y: 0.32, z: 0}
+    rightSpawnPosition: {x: 0.48, y: 0.32, z: 0}
+    leftFlashPosition: {x: -0.423, y: 0.7, z: 0}
+    rightFlashPosition: {x: 0.478, y: 0.7, z: 0}
+  - leftSpawnPosition: {x: -0.72, y: -0.5, z: 0}
+    rightSpawnPosition: {x: 0.722, y: -0.5, z: 0}
+    leftFlashPosition: {x: -0.766, y: -0.12, z: 0}
+    rightFlashPosition: {x: 0.771, y: -0.12, z: 0}
 --- !u!1 &6316659921242795102
 GameObject:
   m_ObjectHideFlags: 0
@@ -322,7 +362,7 @@ GameObject:
   - component: {fileID: 6316659921242795103}
   m_Layer: 0
   m_Name: SpawnPointLeft
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -335,7 +375,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6316659921242795102}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.41, y: 0.32, z: 0}
+  m_LocalPosition: {x: -0.72, y: -0.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -353,7 +393,7 @@ GameObject:
   - component: {fileID: 6316659921651108974}
   - component: {fileID: 6316659921651108975}
   m_Layer: 0
-  m_Name: Flash
+  m_Name: FlashLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -367,11 +407,10 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6316659921651108973}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.415, y: 0.567431, z: 0}
+  m_LocalPosition: {x: -0.766, y: -0.12, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 6316659920484215596}
+  m_Children: []
   m_Father: {fileID: 6316659921068098308}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

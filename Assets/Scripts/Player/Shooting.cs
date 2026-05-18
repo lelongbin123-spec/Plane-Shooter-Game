@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -6,6 +6,8 @@ public class Shooting : MonoBehaviour
 {
     public GameObject bulletPrefab;
     public GameObject flash;
+    public GameObject flashLeft;
+    public GameObject flashRight;
     public Transform spawnPointLeft;
     public Transform spawnPointRight;
     public float bulletSpawnTime = 0.5f;
@@ -18,7 +20,7 @@ public class Shooting : MonoBehaviour
     void OnEnable()
     {
         defaultBulletSpawnTime = bulletSpawnTime;
-        flash.SetActive(false);
+        SetFlashActive(false);
         StopAllCoroutines();
         StartCoroutine(Shoot());
     }
@@ -64,9 +66,32 @@ public class Shooting : MonoBehaviour
         {
             yield return new WaitForSeconds(bulletSpawnTime);
             Fire();
-            flash.SetActive(true);
+            SetFlashActive(true);
             yield return new WaitForSeconds(0.1f);
-            flash.SetActive(false);
+            SetFlashActive(false);
+        }
+    }
+
+    private void SetFlashActive(bool active)
+    {
+        if (flashLeft != null || flashRight != null)
+        {
+            if (flashLeft != null)
+            {
+                flashLeft.SetActive(active);
+            }
+
+            if (flashRight != null)
+            {
+                flashRight.SetActive(active);
+            }
+
+            return;
+        }
+
+        if (flash != null)
+        {
+            flash.SetActive(active);
         }
     }
 }
