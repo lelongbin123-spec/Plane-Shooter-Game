@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -10,8 +10,15 @@ public class PlayerScript : MonoBehaviour
     public UIGameOver uiGameOver;
     public float speed = 10f;
     public float papding = 0.8f;
+    [SerializeField] private float gameOverDelay = 2f;
 
     private Vector3 startPosition;
+    private SpriteRenderer spriteRenderer;
+    private Collider2D playerCollider;
+    private Shooting shooting;
+    private bool isDead = false;
+
+    public bool IsDead => isDead;
 
     float xMin, xMax, yMin, yMax;
 
@@ -30,6 +37,10 @@ public class PlayerScript : MonoBehaviour
         xMax = rightTop.x - papding;
         yMin = leftBottom.y + papding;
         yMax = rightTop.y - papding;
+
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        playerCollider = GetComponent<Collider2D>();
+        shooting = GetComponent<Shooting>();
     }
     // Start is called before the first frame update
     void Start()
@@ -42,6 +53,11 @@ public class PlayerScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (isDead)
+        {
+            return;
+        }
+
         //di chuyen theo input
         /*float deltaX = Input.GetAxis("Horizontal") * speed * Time.deltaTime;
         float deltaY = Input.GetAxis("Vertical") * speed * Time.deltaTime;
@@ -59,6 +75,11 @@ public class PlayerScript : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        if (isDead)
+        {
+            return;
+        }
+
         if (collision.CompareTag("EnemyBullet"))
         { 
             DamagePlayerHealthBar();
@@ -73,17 +94,7 @@ public class PlayerScript : MonoBehaviour
 
             if (health <= 0)
             {
-                //Destroy(gameObject);
-                gameObject.SetActive(false);
-                GameObject playerExplosion = Instantiate(explosion, transform.position, Quaternion.identity);
-                Destroy(playerExplosion, 2f);
-
-                if (AudioManager.HasInstance)
-                {
-                    AudioManager.Instance.PlayPlayerDeath();
-                }
-
-                //xu ly khi player bi trung dan
+                StartCoroutine(PlayerDie());
             }
         }
         if (collision.CompareTag("Coin"))
@@ -108,15 +119,51 @@ public class PlayerScript : MonoBehaviour
             barFillAmount = barFillAmount - damageAmount;
             uiGameplay.UpdateHealthbar(barFillAmount);
         }
-
-        if (health <= 0)
-        {
-            Time.timeScale = 0f;
-            uiGameOver.Show(score);
-        }
     }
+
+    private IEnumerator PlayerDie()
+    {
+        isDead = true;
+
+        if (Spawner.Instance != null)
+        {
+            Spawner.Instance.HandlePlayerGameOver();
+        }
+
+        if (playerCollider != null)
+        {
+            playerCollider.enabled = false;
+        }
+
+        if (shooting != null)
+        {
+            shooting.enabled = false;
+        }
+
+        if (spriteRenderer != null)
+        {
+            spriteRenderer.enabled = false;
+        }
+
+        GameObject playerExplosion = Instantiate(explosion, transform.position, Quaternion.identity);
+        Destroy(playerExplosion, gameOverDelay);
+
+        if (AudioManager.HasInstance)
+        {
+            AudioManager.Instance.PlayPlayerDeath();
+        }
+
+        yield return new WaitForSeconds(gameOverDelay);
+
+        Time.timeScale = 0f;
+        uiGameOver.Show(score);
+    }
+
     public void Resurrection(bool resetScore = true)
     {
+        StopAllCoroutines();
+        Time.timeScale = 1f;
+        isDead = false;
         health = 20f;
         barFillAmount = 1f;
         if (resetScore)
@@ -126,8 +173,24 @@ public class PlayerScript : MonoBehaviour
         transform.position = startPosition;
         gameObject.SetActive(true);
 
+        if (spriteRenderer != null)
+        {
+            spriteRenderer.enabled = true;
+        }
+
+        if (playerCollider != null)
+        {
+            playerCollider.enabled = true;
+        }
+
+        if (shooting != null)
+        {
+            shooting.enabled = true;
+        }
+
         uiGameplay.UpdateHealthbar(barFillAmount);
         uiGameplay.UpdateCoin(score);
         uiGameOver.Close();
     }
 }
+

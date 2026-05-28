@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -34,10 +34,29 @@ public class UILevel : MonoBehaviour
     public IEnumerator ShowLevelComplete()
     {
         yield return new WaitForSeconds(2f);
+
+        if (IsPlayerDead())
+        {
+            yield break;
+        }
+
         endText.SetActive(true);
         yield return new WaitForSeconds(3f);
+
+        if (IsPlayerDead())
+        {
+            HideLevelComplete();
+            yield break;
+        }
+
         Time.timeScale = 0f;
         SetPanelVisible(true);
+    }
+
+    public void HideLevelComplete()
+    {
+        endText.SetActive(false);
+        SetPanelVisible(false);
     }
 
     public IEnumerator ShowLevelStart(int levelNumber)
@@ -58,7 +77,6 @@ public class UILevel : MonoBehaviour
 
         startText.SetActive(false);
     }
-
 
     public void OnExitClicked()
     {
@@ -82,10 +100,16 @@ public class UILevel : MonoBehaviour
         levelLoader.LoadNextLevelData();
         StartCoroutine(BeginLevel(levelLoader.CurrentLevel.levelNumber));
     }
+
     private IEnumerator BeginLevel(int levelNumber)
     {
         yield return StartCoroutine(ShowLevelStart(levelNumber));
         spawner.StartCurrentLevel(false);
+    }
+
+    private bool IsPlayerDead()
+    {
+        return spawner != null && spawner.player != null && spawner.player.IsDead;
     }
 
     private void EnsureCanvasGroup()

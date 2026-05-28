@@ -1,24 +1,55 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine.UI;
+﻿using DG.Tweening;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerHealthbar : MonoBehaviour
 {
     public Image bar;
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] private float fillDuration = 0.2f;
+    [SerializeField] private Ease fillEase = Ease.OutQuad;
+
+    private Tween fillTween;
+
+    private void Start()
     {
-        
+        if (bar != null)
+        {
+            bar.fillAmount = Mathf.Clamp01(bar.fillAmount);
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnDisable()
     {
-        
+        KillFillTween();
     }
+
+    private void OnDestroy()
+    {
+        KillFillTween();
+    }
+
     public void SetAmount(float amount)
     {
-        bar.fillAmount = amount;
+        if (bar == null)
+        {
+            return;
+        }
+
+        float targetAmount = Mathf.Clamp01(amount);
+
+        KillFillTween();
+        fillTween = bar.DOFillAmount(targetAmount, fillDuration)
+            .SetEase(fillEase)
+            .SetUpdate(true);
+    }
+
+    private void KillFillTween()
+    {
+        if (fillTween != null && fillTween.IsActive())
+        {
+            fillTween.Kill();
+        }
+
+        fillTween = null;
     }
 }
